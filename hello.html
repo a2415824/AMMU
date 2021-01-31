@@ -1,11 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animation</title>
+  </head>
+  <style>
+    body{
+        background-image: url(img/img4.jpg);
+        height: 1500px;
+        width: 1500px;
+        background-attachment: fixed;
+        background-size: 1500px;
+    }
     
-</body>
+    p{
+        font-size: 200px;
+        font-style: unset;
+    }
+
+  
+    .box{
+        background-color: burlywood;
+        height: 250px;
+        width: 1500px;
+        position: relative;
+        animation-name: aa;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes aa{
+        0% {background-image: url(img/img3.jpg);}
+        10%{background-image: url(img/img5.jpg);}
+        30%{background-image: url(img/img6.jpg);}
+        20%{background-image: url(img/img7.jpg);}
+        40%{background-image: url(img/img8.jpg);}
+        50%{background-image: url(img/img9.jpg);}
+        60%{background-image: url(img/img1.jpg);}
+        70%{background-image: url(img/img10.jpg);}
+        80%{background-image: url(img/img8.jpg);}
+        90%{background-image: url(img/img5.jpg);}
+        100%{background-image: url(img/img6.jpg);}
+    }
+    
+    .button1 {
+      background-color: white;
+      border: none;
+      color:black;
+      padding: 90px 192px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 24px;
+      margin: 8px 4px;
+      cursor: pointer;
+      position: relative;
+
+    }
+
+  </style>
+  <body>
+    <div class="box">
+      <p>P R A V E E N</p>
+    </div>
+    <button class="button1">hi</button>
+    <button class="button2">hlo</button>
+    <button class="button3">good morning</button>
+  </body>
 </html>
